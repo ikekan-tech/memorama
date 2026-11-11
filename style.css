@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f4f8;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.carta {
+  width: 90px;
+  height: 90px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3b82f6;
+  color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carta.volteada,
+.carta.encontrada {
+  background: white;
+  color: black;
+  border: 2px solid #3b82f6;
+}
+
+.carta.encontrada {
+  background: #bbf7d0;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
